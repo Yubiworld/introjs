@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe test 1</title>
+
+    <style>
+        #man {
+            width: 65px;
+            height: 100px;
+            background-image: url(img/Charactervector.svg);
+            border: solid 1px;
+            animation: walk 1s steps(8) infinite;
+        }
+
+        #wrap {
+            padding-top: 110px;
+            background-image: url() animation: move_bg
+        }
+
+        @keyframes walk {
+            to {
+                background-position: -960px;
+            }
+        }
+
+        @keyframes move_bg {
+            to {
+                background-position: -400px;
+                padding-left: 100%;
+                /*/this line is the line that makes the man move. it pushes the guy to the right./*/
+            }
+        }
+        /*/
+        div:hover {
+            animation-play-state: paused;
+        }
+
+
+        @keyframes move {
+            25%
+
+        this 25% is the 25% of the 4 seconds
+
+            {
+                transform: translate(300px) rotate(90deg) scale(5);
+            }
+            50% {
+                transform: translate(300px, 500px) rotate(-5);
+            }
+            75% {
+                transform: translate(0, 500px) scale(-5);
+            }
+            100% {
+                transform: translate(0, 0) rotate(90deg);
+            }
+        }
+         /*/
+    </style>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="man"></div>
+    </div>
+</body>
+
+</html>
